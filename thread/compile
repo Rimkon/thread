@@ -1,0 +1,2 @@
+g++ -pthread -o MyProgramm  main.cpp ./resources/function/sources/foo.cpp ./resources/class/sources/class.cpp ./resources/oops/sources/oops.cpp
+echo ./MyProgramm
