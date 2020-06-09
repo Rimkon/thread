@@ -3,16 +3,14 @@
 #include <iostream>
 #include <thread>
 #include "./resources/function/headers/foo.hpp"
-#include "./resources/class/headers/class.hpp"
 
-void some(){};
 int main()
 {
-// --------- поток из экземпляра класса operator ()() const -------------
-	background_task some;
-	std::thread t(some);
+	std::thread t ([]{
+				countNumber(1500);
+				countStar();
+				}
+			);
 	t.detach();
 	countSpace();
-// =====================================================================
-
 }//main
