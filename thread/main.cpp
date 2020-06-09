@@ -2,43 +2,12 @@
 //
 #include <iostream>
 #include <thread>
-#include "./resources/function/headers/foo.hpp"
-#include "./resources/class/headers/class.hpp"
-#include "./resources/oops/headers/oops.hpp"
+#include "./resources/function/headers/foo.hpp" //countStar. countNumber
 
-void some(){};
 int main()
 {
-// ---------- создание потока -------------------------------------------
-//
-/*	std::thread t (countSpace);
+	int n =44;
+	std::thread t (countSpace);
 	t.detach();
-	countNumber(); */
-// ======================================================================
-
-
-// --------- поток из экземпляра класса operator ()() const -------------
-/*
-	{
-	background_task some;
-	std::thread t(some);
-	t.detach();
-	countSpace();
-	}
-*/
-// ======================================================================
-
-
-// ----------- поток использую лямбда функцию --------------------------
-/*
-	std::thread t ([] {
-			      countSpace();
-			   });
-	t.detach();	
-	countStar();*/
-// =====================================================================
-
-	oops();
-int n =44;
-func i(n);
+	countStar();	
 }//main
