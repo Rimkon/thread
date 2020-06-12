@@ -22,5 +22,5 @@ int main() {
 	t1.detach();
 
 	std::thread t2 = g();
-    t2.join();
+        t2.join();
 }//main
