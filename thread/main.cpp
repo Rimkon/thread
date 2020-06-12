@@ -13,7 +13,7 @@ std::thread f() {
 
 std::thread g() {							
                  std::thread t (countNumber,3000);	// передали ее в поток
-				return t;								// вернули ее
+                 return t;				// вернули ее
 }; // thread g()
 
 
